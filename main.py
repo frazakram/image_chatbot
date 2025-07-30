@@ -322,7 +322,7 @@ class AIAgent:
             # Default to Gemini if no configuration provided
             model_config = {
                 "type": "gemini",
-                "api_key": "AIzaSyA03TDmMCySeHgisstcCLeBurY9NnyCytE",  # Replace with your key
+                "api_key": "GEMINI_API_KEY",  # Replace with your key
                 "model_name": "gemini-2.5-pro"
             }
         
@@ -937,7 +937,7 @@ def main():
     # Configure the primary model
     model_config = {
         "type": args.model,
-        "api_key": args.api_key or os.environ.get(f"{args.model.upper()}_API_KEY", "AIzaSyA03TDmMCySeHgisstcCLeBurY9NnyCytE"),
+        "api_key": args.api_key or os.environ.get(f"{args.model.upper()}_API_KEY", "GEMINI_API_KEY"),
         "model_name": args.model_name
     }
     
