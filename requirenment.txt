@@ -1,0 +1,20 @@
+# Core dependencies
+streamlit>=1.31.0
+pillow>=10.0.0
+pandas>=2.0.0
+requests>=2.31.0
+tqdm>=4.66.0
+
+# PDF processing
+pymupdf>=1.23.0
+
+# AI models
+google-generativeai>=0.3.0
+anthropic>=0.8.0
+openai>=1.10.0
+
+# Text processing
+langchain-text-splitters>=0.0.1
+
+# For deployment
+python-dotenv>=1.0.0
